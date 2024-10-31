@@ -1,0 +1,722 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+.dash-body{
+    /* background-color: royalblue; */
+    display: flex;
+}
+.admin-side-bar-1{
+    /* background-color: green; */
+    height: 100%;
+    width: 350px;
+    /* border: 5px solid black; */
+    border-right: 2px solid rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+}
+.admin-side-bar-2{
+    width: 100%;
+    height: 100%;
+}
+.side-1-menu-title{
+    width: 100%;
+    background-color: #607e8b;
+    position: sticky;
+    top: 0;
+
+}
+.menu-title{
+    text-align: center;
+
+}
+.menu-title h1{
+    padding: 10px 0px;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+}
+.menu-list{
+    /* background-color: brown; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-list ul{
+    list-style-type: none;
+    text-align: center;
+}
+.menu-list ul li{
+    margin: 14px 10px;
+    padding: 5px 0px;
+}
+.menu-list ul li:hover{
+    border: 2px solid #245a64;
+    border-radius: 5px;
+    /* transition: 0.6s;   */
+    color: #ffffff;  
+}
+.menu-list ul li a{
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-decoration: none;   
+}
+
+.dash-page-title{
+    background-color: #e0e0e0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.dash-page-title h1{
+    padding: 12px 0px;
+    font-family: system-ui;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* /////////////////////////////// Home Page Style //////////////////////////// */
+
+.home-main-div{
+    height: 100%;
+    width: 100%;
+    /* background-color: #607e8b; */
+}
+.home-sub-div{
+    height: 100%;
+    width: 90%;
+    margin: 20px 100px;
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-user-count{
+    height: 160px;
+    width: 275px;
+    background-color: #245a64;
+    margin:10px 10px;
+    border-radius: 5px;
+    box-shadow: -6px -6px 7px black;
+    cursor: pointer;
+    padding: 1px 0px;
+}
+.home-user-title{
+    text-align: center;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.home-user-title h3{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: math;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.home-user-title h3 span{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: math;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 900;
+    text-decoration: underline;
+    /* text-shadow: -2px -2px 3px rgb(0, 0, 0); */
+}
+
+.user-count{
+    /* background-color: aqua; */
+    text-align: center;
+    /* margin-top: 20px; */
+    cursor: pointer;
+}
+.user-count h4{
+    font-size: 60px;
+    color: #ffffff;
+    font-family: math;
+    padding-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.home-count-a{
+    text-decoration: none;
+
+}
+/* ////////////////////////////// User page Style ///////////////////////////////// */
+
+.admin-user-table{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+.admin-user-table table{
+    border: none;
+    margin: 20px 80px;
+    /* background-color: #000000; */
+}
+.admin-user-table thead{
+    background-color: #616161;
+    color: #ffffff;
+    font-weight: 100;
+    letter-spacing: 0.04em;
+    /* margin: 5px 7px; */
+    
+}
+.admin-user-table th{
+    padding: 5px 10px;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.admin-user-table tbody{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.admin-user-table tr{
+    border-bottom: 2px solid black;
+}
+.admin-user-table td{
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+
+
+/* ////////////////////////////// Comment Page Style ///////////////////////////// */
+
+.comment-main-div{
+    /* background-color: #245a64; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.comment-sub-div{
+    width: 90%;
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: brown; */
+}
+.comment-div{
+    width: 90%;
+    background-color: #e0e0e0;
+    margin: 20px 0px;
+    /* border: 2px solid rgb(24, 23, 23); */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.comment-div-user-detail{
+    /* background-color: #bfbfbf; */
+    /* color: #e0e0e0; */
+    padding: 0px 0px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: flex-start;
+}
+.comment-div-user-detail h5{
+    margin: 0px 6px;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+}
+.comment-div-comment{
+    margin: 10px 30px;
+}
+.comment-div-comment p{
+    font-size: 18px;
+    font-family: system-ui;
+    letter-spacing: 0.03em;
+}
+.delete-comment{
+    display: flex;
+    justify-content:end;
+    /* font-size: 16px; */
+}
+.delete-comment a{
+    font-size: 14px;
+}
+.no-comment h3{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0px;
+    letter-spacing: 0.03em;
+    font-family: system-ui;
+    font-weight: 300;
+}
+
+
+/* //////////////////// */
+.admin-logout-img{
+    height: 30px;
+    padding-top: 13px;
+    padding-left: 10px;
+    /* text-decoration: underline; */
+}
+#admin-login-li{
+    background-color: gainsboro;
+    border: none;
+    border-radius: 5px;
+}
+#admin-login-li:hover{
+    border: none;
+}
+
+/* ///////////////////////////// Fertilizers Page Style form /////////////////////// */
+
+.fer-form-main-div{
+    /* background-color: #245a64; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fer-form-sub-div{
+    /* background-color: #607e8b; */
+    margin: 20px 80px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.fer-form-div{
+    /* background-color: brown; */
+    border: 1px solid rgba(0, 0, 0, 0.572);
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 10px;
+    padding: 30px 10px;
+    width: 90%;
+    margin: 20px 10px;
+}
+.fer-label-1{
+    /* background-color: blue; */
+    margin: 20px 10px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding: 10px 20px; */
+}
+.fer-label-1 label{
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 7px;
+    font-family: math;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    
+}
+.fer-label-1 input{
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.442);
+    background-color: transparent;
+    outline: none;
+    font-family: math;
+    letter-spacing: 0.03em;
+}
+.fer-label-1 input:focus-visible{
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.889);
+    transition: 0.4s;
+}
+.fer-label-1 select{
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.442);
+    background-color: transparent;
+    outline: none;
+    font-family: math;
+    letter-spacing: 0.03em;
+}
+.fer-label-1 select:focus-visible{
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.889);
+    transition: 0.4s;
+}
+.fer-label-1 textarea{
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.442);
+    background-color: transparent;
+    outline: none;
+    font-family: math;
+    letter-spacing: 0.03em;
+    height: 150px;
+}
+.fer-label-1 textarea:focus-visible{
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.889);
+    transition: 0.4s;
+}
+.fer-label-1 button{
+    padding: 10px 0px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    /* font-family: math; */
+    font-family: system-ui;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.fer-label-1 button:hover{
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.838);
+    transition: 0.6s;
+    font-size: 23px;
+}
+
+#add-product{
+    background-color: rgba(0, 0, 255, 0.838);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+#add-product:hover{
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.838);
+    transition: 0.6s;
+    /* font-size: 23px; */
+    background-color: blue;
+}
+.add-fer-title{
+    background-color: #c5c5c5d4;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+.add-fer-title h3{
+    color: #ff0000;
+    font-size: 28px;
+    font-family: system-ui;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.add-fer-title h3 span{
+    color: blue;
+    font-size: 28px;
+    font-family: system-ui;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.add-product-btn{
+    position: sticky;
+    top: 10px;
+    margin: 10px 20px;
+}
+
+.add-product-btn a{
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+}
+.add-product-btn a span{
+    /* background-color: blue; */
+    padding: 10px 30px;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+    color: #000000;
+    font-family: system-ui;
+    font-size: 20px;
+    text-decoration: none;
+}
+.add-product-btn a span:hover{
+    box-shadow: 0px 0px 10px gray;
+    border: none;
+}
+
+/* /////////////////////////// card page style //////////////////////////////////*/
+
+.sub-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.div-1{
+    width: 100%;
+    padding: 10px 0px;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    
+}
+.div-1:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+.div-1 img{
+    width: 170px;
+    height: 170px;
+}
+.div-1 p{
+    font-size: 18px;
+    font-family: math;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+.cart-price-div h3{
+    font-family: math;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.product-edit-del-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.product-edit-del-btn a{
+    /* background-color: #245a64; */
+    padding: 5px 10px;
+    /* margin-top: 5px; */
+    margin: 0px 20px;
+
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* //////////////////////////// Details page style /////////////////////////////*/
+
+.details-main-div{
+    /* background-color: #245a64; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.details-sub-div{
+    /* background-color: #ff0000; */
+    width: 100%;
+    margin: 20px 20px;
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+}
+.details-pro-div{
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+    width: 100%;
+    /* height: 100px; */
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+}
+.detail-pro-img img{
+    height: 400px;
+}
+.detail-pro-img{
+    width: 50%;
+    /* background-color: #245a64; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px gray;
+    overflow: hidden;
+
+}
+.detail-pro-details{
+    /* background-color: #bb00ff; */
+    width: 100%;
+}
+.details-h3{
+    font-size: 30px;
+    margin: 10px 30px;
+    font-family: system-ui;
+    letter-spacing: 0.03em;
+    color: #616161;
+    /* text-decoration: underline; */
+}
+.details-h3 span{
+    font-size: 25px;
+    color: #000000;
+    /* text-decoration: none; */
+    font-family: math;
+}
+.detail-h3{
+    font-size: 25px;
+    margin: 20px 30px;
+    overflow: auto;
+    height: 250px;
+    scroll-behavior: smooth;
+}
+.detail-h3 span{
+    font-size: 25px;
+    font-family: math;
+    letter-spacing: 0.04em;
+    line-height: 20px;
+}
+
+#edit-delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#edit-delete a{
+    margin: 0px 30px;
+}
+#detail-a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* /////////////////////////// Admin Order Page Style //////////////////////////// */
+
+.order-main-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-sub-div{
+    /* width: 90%; */
+    width: 1000px;
+    background-color: #245a64;
+    border-radius: 5px;
+    margin: 20px 0px;
+    /* overflow: hidden; */
+    overflow: scroll;
+    
+}
+.order-sub-div table{
+    /* border: 2px solid black; */
+    width: 100%;
+    margin: 20px 0px;
+}
+.order-sub-div table thead{
+    border: 1px solid black;
+    background-color: #0033ff;
+    color: #ffffff;
+    
+}
+.order-sub-div table thead th{
+    font-size: 20px;
+    padding: 0px 0px;
+    font-family: system-ui;
+    font-weight: 400;
+}
+.order-sub-div table tbody tr td{
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 18px;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    color: #ffffff;
+    font-family: system-ui;
+}
+
+
+/* //////////////////////////////// Harvester Page Style //////////////////////////// */
+
+.harvester-main-div{
+    width: 100%;
+    /* background-color: #0033ff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.harvester-sub-div{
+    width: 97%;
+    /* background-color: #245a64; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
+}
+.harvester-sub-div table{
+    width: 100%;
+}
+.harvester-sub-div table thead th{
+    background-color: #0008ff;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-family: system-ui;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.harvester-sub-div table tbody tr td{
+    text-align: center;
+    font-size: 18px;
+    font-family: system-ui;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(44, 41, 41);
+    border-right: 1px solid rgb(44, 41, 41);
+}
+
+#har-action{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+#har-edit{
+    background-color: #0008ff;
+    padding: 5px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#har-delete{
+    background-color: #ff0000;
+    padding: 5px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.har-no-record{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.har-no-record h3{
+    color: #616161;
+    font-family: math;
+    font-size: 24px;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
